@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "NYT Crossword Fullscreen",
-    "version": "1.0",
+    "version": "1.3",
     "description": "Adds a fullscreen button to the NYT crossword UI.",
     "icons": {
         "48": "icons/icon-48.png",
@@ -12,6 +12,5 @@
             "matches": ["*://www.nytimes.com/crosswords/game/*"],
             "js": ["fullscreen.js"]
         }
-    ],
-    "web_accessible_resources": ["fullscreen.svg"]
+    ]
 }
