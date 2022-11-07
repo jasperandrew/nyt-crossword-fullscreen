@@ -30,16 +30,19 @@
 
                 goFullscreen = () => {
                     fullMode = !fullMode;
+                    qs('header').style.display = css('none');
                     qs('.pz-game-title-bar').style.display = css('none');
                     qs('#portal-editorial-content').style.display = css('none');
                     qs('footer').style.display = css('none');
-                    qs('.messaging-hasbro-no-extra').style.height = css('calc(100vh - 65px)');
-                    
+                    qs('.messaging-hasbro-no-extra').style.height = css('100vh');
+                    document.querySelectorAll('.pz-ad-box').forEach(el => el.style.display = css('none'));
+
                     container.style.height = css('100%');
                     container.style.display = css('flex');
                     container.style.justifyContent = container.style.alignItems = css('center');
                     
                     game.style.marginTop = css('0');
+                    qs('.pz-game-toolbar').style.borderTop = css('none');
     
                     if (fixStyle.cssRules.length > 0) fixStyle.deleteRule(0);
                     if (fullMode) fixStyle.insertRule('.xwd__rebus--input { position: fixed; }');
@@ -56,7 +59,7 @@
     
                     if (posStyle.cssRules.length > 0) posStyle.deleteRule(0);
                     if (fullMode) posStyle.insertRule('.xwd__rebus--input {' + 
-                                        `top: ${-1 * (w - w * r)/2 + (t - 65) * r}px !important;` +
+                                        `top: ${-1 * (w - w * r)/2 + t * r}px !important;` +
                                         `left: ${-1 * (w - w * r)/2 + l * r}px !important; }`);
                 };
 
