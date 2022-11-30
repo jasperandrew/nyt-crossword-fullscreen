@@ -88,14 +88,23 @@
         fullbtn.querySelector('button').addEventListener('click', toggleFullscreen);
 
         // Add a fullscreen button to the pause modal
-        let modalIcon = qs('.xwd__start-modal--icon');
-        fullbtn = modalIcon.parentNode.insertBefore(fullbtn.cloneNode(true), modalIcon);
-        fullbtn.querySelector('button').addEventListener('click', toggleFullscreen);
-        
+        fullbtn = fullbtn.cloneNode(true);
         fullbtn.style.position = 'absolute';
         fullbtn.style.top = '10px';
         fullbtn.style.left = '10px';
         fullbtn.querySelector('button').style.borderRadius = '4px';
+        let icon = fullbtn.querySelector('i').style;
+        icon.filter = 'grayscale(1) brightness(0.4)';
+        icon.backgroundColor = 'unset';
+        
+        let addBtn = () => {
+            qs('.xwd__modal--content')
+                .appendChild(fullbtn.cloneNode(true))
+                .querySelector('button').addEventListener('click', toggleFullscreen);
+        };
+
+        addBtn();
+        new MutationObserver(addBtn).observe(qs('#portal-game-modals'), { childList: true });
 
         // Stop the invisible rebus div from changing the size of the page
         let rebusFix = document.head.appendChild(document.createElement('style')).sheet;
