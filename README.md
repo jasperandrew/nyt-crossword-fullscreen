@@ -9,7 +9,7 @@ Chrome/Edge Extension: [[link]](https://chrome.google.com/webstore/detail/nyt-cr
 
 ### 1.6
 
-- Added fullscreen button to the pause modal
+- Added fullscreen button to the modal
 
 ### 1.5
 
