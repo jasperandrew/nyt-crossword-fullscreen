@@ -39,7 +39,7 @@
             qs('.pz-game-title-bar').style.display = css('none');
             qs('#portal-editorial-content').style.display = css('none');
             qs('footer').style.display = css('none');
-            qs('.messaging-hasbro-no-extra').style.height = css('100vh');
+            qs('body > div:first-of-type').style.height = css('100vh');
             document.querySelectorAll('.pz-ad-box').forEach(el => el.style.display = css('none'));
 
             container.style.height = css('100%');
