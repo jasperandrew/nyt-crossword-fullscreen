@@ -7,6 +7,11 @@ Chrome/Edge Extension: [[link]](https://chrome.google.com/webstore/detail/nyt-cr
 
 ## Changelog
 
+### 1.7
+
+- Fixed a bug where NYT changed the page and it broke
+- Switched to using the browser runtime to retrieve images instead of hosting them
+
 ### 1.6
 
 - Added fullscreen button to the modal
