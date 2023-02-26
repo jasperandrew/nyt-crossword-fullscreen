@@ -84,7 +84,7 @@
         // Create the full-screen button
         let toolbtn = qs('.xwd__toolbar--tools > div:nth-child(1)'),
             fullbtn = toolbtn.parentNode.insertBefore(toolbtn.cloneNode(true), toolbtn.nextSibling);
-        fullbtn.querySelector('i').style.backgroundImage = `url('https://www.jasperandrew.me/nyt-crossword-fullscreen/fullscreen.svg')`;
+        fullbtn.querySelector('i').style.backgroundImage = `url('${chrome.runtime.getURL('fullscreen.svg')}')`;
         fullbtn.querySelector('button').addEventListener('click', toggleFullscreen);
 
         // Add a fullscreen button to the pause modal

@@ -12,5 +12,8 @@
             "matches": ["*://www.nytimes.com/crosswords/game/*"],
             "js": ["fullscreen.js"]
         }
+    ],
+    "web_accessible_resources": [
+        "fullscreen.svg"
     ]
 }
