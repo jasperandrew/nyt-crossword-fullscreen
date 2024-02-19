@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "NYT Crossword Fullscreen",
-    "version": "1.71",
+    "version": "1.80",
     "description": "Adds a fullscreen button to the NYT crossword UI.",
     "icons": {
         "48": "icons/icon-48.png",
