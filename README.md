@@ -7,6 +7,12 @@ Chrome/Edge Extension: [[link]](https://chrome.google.com/webstore/detail/nyt-cr
 
 ## Changelog
 
+### 1.8
+
+- Improve the consistency and flexibility of the observer code
+- Made the fullscreen button appear on the pause modal
+- Fixed rebus positioning in fullscreen
+
 ### 1.7
 
 - Fixed a bug where NYT changed the page and it broke
