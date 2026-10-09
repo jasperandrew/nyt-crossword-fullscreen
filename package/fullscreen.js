@@ -116,7 +116,7 @@
 		toolbar.padding = '0 calc((100% - 1280px)/2)';
 	});
 
-	awaitNode('.xwd__toolbar--tools > div:nth-child(1)').then(el => {
+	awaitNode('.xwd__toolbar--tools > li:nth-child(1)').then(el => {
 		// Create the full-screen button
 		let fullbtn = el.parentNode.insertBefore(el.cloneNode(true), el.nextSibling);
 		fullbtn.querySelector('i').style.backgroundImage = `url('${chrome.runtime.getURL('fullscreen.svg')}')`;
